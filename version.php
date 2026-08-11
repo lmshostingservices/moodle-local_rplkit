@@ -36,7 +36,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'local_rplkit';
-$plugin->version   = 2026080500103; // v0.3.0 - output #3: Assignment Benchmarks builder (all three ASQA evidence outputs implemented).
+$plugin->version   = 2026080500; // v0.3.0 - output #3: Assignment Benchmarks builder (all three ASQA evidence outputs implemented).
 $plugin->release   = '0.3.0';
 $plugin->requires  = 2022112800;    // Moodle 4.1 (LTS) or later.
 $plugin->maturity  = MATURITY_BETA;
