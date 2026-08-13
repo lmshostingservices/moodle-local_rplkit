@@ -36,7 +36,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'local_rplkit';
-$plugin->version   = 2026080500; // v0.2.1 - marketplace compliance (LICENSE, privacy null_provider, README, thirdpartylibs, class-brace).
+$plugin->version   = 2026080500102; // v0.2.1 - marketplace compliance (LICENSE, privacy null_provider, README, thirdpartylibs, class-brace).
 $plugin->release   = '0.2.1';
 $plugin->requires  = 2022112800;    // Moodle 4.1 (LTS) or later.
 $plugin->maturity  = MATURITY_ALPHA;
