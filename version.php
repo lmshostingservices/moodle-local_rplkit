@@ -36,10 +36,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'local_rplkit';
-$plugin->version   = 2026080500; // v0.3.0 - output #3: Assignment Benchmarks builder (all three ASQA evidence outputs implemented).
-$plugin->release   = '0.3.0';
+$plugin->version   = 2026080500; // v0.2.1 - marketplace compliance (LICENSE, privacy null_provider, README, thirdpartylibs, class-brace).
+$plugin->release   = '0.2.1';
 $plugin->requires  = 2022112800;    // Moodle 4.1 (LTS) or later.
-$plugin->maturity  = MATURITY_BETA;
+$plugin->maturity  = MATURITY_ALPHA;
 
 // Soft dependency: RPL Kit will use local_rtocompliance's RTO/qualification data when it is
 // installed, but does not hard-require it (the generator can also take unit data directly).

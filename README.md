@@ -16,9 +16,8 @@ For a chosen unit of competency, RPL Kit generates three ASQA-mapped evidence ou
    checklist) mapped to the unit's Performance Criteria, with authenticity and third-party
    controls, ready to paste into the SmartForm app.
 3. **Practical skill demonstration** — a Moodle assignment with Assignment Benchmarks advanced
-   grading criteria (groups → items → scores) mapped to Performance Criteria (one item per
-   criterion, grouped by element) and Performance Evidence (sufficiency requirements), ready to
-   import into a course assignment graded with the Assignment Benchmarks plugin.
+   grading criteria (skills → sub-skills → scores) mapped to Performance Criteria and Performance
+   Evidence. *(Being connected to the Assignment Benchmarks format.)*
 
 Outputs can be created directly in a Moodle course and/or exported as a single `.mbz` backup.
 
@@ -50,13 +49,5 @@ GNU GPL v3 or later. See the `LICENSE` file.
 
 ## Status
 
-Beta. All three ASQA evidence outputs are implemented:
-
-- **Output #1** (theory quiz XML) — implemented and tested.
-- **Output #2** (SmartForm JSON) — implemented and tested.
-- **Output #3** (Assignment Benchmarks criteria JSON) — implemented; requires
-  `gradingform_benchmarks` to be installed and a course assignment configured with the
-  Benchmarks advanced-grading method to use the generated criteria.
-
-The training.gov.au unit-fetch integration is still being connected to the platform; unit data
-can be supplied directly in the meantime.
+Alpha. Outputs #1 (theory quiz) and #2 (SmartForm) are implemented and tested; output #3
+(Assignment Benchmarks) and the training.gov.au unit fetch are being connected to the platform.

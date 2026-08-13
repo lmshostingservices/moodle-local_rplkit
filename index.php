@@ -37,16 +37,11 @@ $PAGE->set_heading(get_string('heading', 'local_rplkit'));
 echo $OUTPUT->header();
 echo $OUTPUT->box(get_string('intro', 'local_rplkit'));
 
-// v0.3.0: all three ASQA evidence outputs are implemented.
-//   Output #1: \local_rplkit\quiz_builder::build_theory_quiz_xml()
-//   Output #2: \local_rplkit\smartform_builder::build_observation_kit_json()
-//   Output #3: \local_rplkit\assignment_benchmarks_builder::build_benchmarks_criteria_json()
-// The generator UI (unit selection + download) is wired up in a subsequent release once the
-// training.gov.au unit-fetch integration is connected to the platform.
-echo html_writer::tag('p', get_string('pluginname', 'local_rplkit') . ' v0.3.0 — all three '
-    . 'ASQA evidence outputs are implemented: theory quiz (output #1), SmartForm observation '
-    . 'checklist (output #2), and Assignment Benchmarks practical-skill criteria (output #3). '
-    . 'The full generator UI will be available once the training.gov.au unit-fetch integration '
-    . 'is connected to the platform.');
+// v0.1.0: the three-output generator UI is under construction. The SmartForm builder
+// (output #2) is implemented in \local_rplkit\smartform_builder; the theory-quiz and
+// Assignment-Benchmarks outputs are wired once the platform schemas are connected.
+echo html_writer::tag('p', get_string('pluginname', 'local_rplkit') . ' v0.1.0 — forms-based '
+    . 'practical output (SmartForm JSON) is implemented; theory-quiz and practical-assignment '
+    . 'outputs are being connected to the platform.');
 
 echo $OUTPUT->footer();
