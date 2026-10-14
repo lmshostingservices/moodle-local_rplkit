@@ -28,8 +28,18 @@ if ($hassiteconfig) {
     $ADMIN->add('root', new admin_category('local_rplkit_cat', get_string('pluginname', 'local_rplkit')));
     $ADMIN->add('local_rplkit_cat', new admin_externalpage(
         'local_rplkit_generate',
-        get_string('heading', 'local_rplkit'),
+        get_string('generator', 'local_rplkit'),
         new moodle_url('/local/rplkit/index.php'),
         'local/rplkit:manage'
     ));
+    // Moodle does not show settings for grading-method plugins, so link Assignment Benchmarks' own
+    // settings page (1.2.40+) here when it is installed.
+    if (file_exists($CFG->dirroot . '/grade/grading/form/benchmarks/admin.php')) {
+        $ADMIN->add('local_rplkit_cat', new admin_externalpage(
+            'local_rplkit_benchmarkssettings',
+            get_string('benchmarkssettings', 'local_rplkit'),
+            new moodle_url('/grade/grading/form/benchmarks/admin.php'),
+            'moodle/site:config'
+        ));
+    }
 }

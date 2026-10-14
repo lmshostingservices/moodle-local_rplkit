@@ -27,8 +27,6 @@
 
 namespace local_rplkit\privacy;
 
-defined('MOODLE_INTERNAL') || die();
-
 /**
  * Privacy provider — RPL Kit stores no personal data.
  */
